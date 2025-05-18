@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kota</title>
+    <style>
+body{
+    color: white;
+    background-image: linear-gradient(to top, #37ecba 0%, #72afd3 100%);
+    width: 70%;
+            margin: 60px auto;
+    }
+    
+    
+
+h1{
+    text-align: center;
+    border: 1px solid white;
+    line-height: 60px;
+    font-weight: bold;
+    padding: 20px;
+}
+
+h2{
+    text-align: center;
+    font-size: 1.5em;
+}
+
+img{
+    display: block;
+    margin: auto;
+    border-radius: 10px;
+
+}
+
+p{
+    display: grid;
+    line-height: 1.5;
+    font-size: 24px;
+    margin: 25px 0 10px;
+            text-align: center;
+            justify-content: center;
+            margin: auto;
+            place-items: center;
+            max-width: 800px;
+        
+}
+
+.content{
+    padding: 60px;
+}
+
+.read {
+    display: block;
+    margin-top: 15px;
+    text-align: center;
+    margin-bottom: 35px;
+   
+}
+
+button{
+    display: block;
+    margin: auto;
+    font-size: 42px;
+    background-color: rgba(0, 0, 0, 0.87);
+    transition: all 200ms ease-in-out;
+    cursor: pointer;
+    color: white;
+    border-radius: 4px;
+    }
+
+    button:hover{
+        background-color: rgba(0, 0, 0, 0.85);
+    }
+    
+    .footer{
+     text-align: center; 
+     font-size: 15px;
+    }
+   
+    
+    </style>
+</head>
+<body>
+    <div class="content">
+    <h1>I love Kota</h1>
+    <h2>Also known as Sphatlho</h2>
+    <hr>
+   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQi2IfUA00VxEFedr9hrXYlvHNRjAlufvYhAg&s" 
+   alt="Kota"
+   width="300px"/>
+   <hr>
+   <p>
+    <strong>Kota</strong>is a South African street food popular in all provinces of South Africa. It is basically a sandwich with meat and
+    french fries. In other regions, it is well-known as "skhambane or Sphatlho". The kota concept started as a hollowed-out quarter loaf of bread filled with beef mince and mashed potatoes in the South
+    African townships. Initially it was sold at schools during lunch breaks. It then evolved to being filled with fried
+    potato "slap" chips instead of mash and other ingredients such as sausage, egg, beef patty, cheese, polony and atchar
+    replaced the mince as it started being sold at tuckshops in townships. The name kota was derived from the English word
+    quarter, referring to the size of the bread loaf used. The name sphatlho was derived from the sotho word "phatlhola",
+    meaning to separate or break apart. The dish is derived from bunny chow.
+    
+   </p>
+    <a href="https://en.wikipedia.org/wiki/Spatlo"
+    target="_blank"
+    class="read">
+        Read on Wikipedia
+    </a>
+   
+    <button>
+        TRY A KOTA
+    </button>
+    
+    <p class="footer">
+    This page was built by
+    <a href="https:www.mmatharimagano/"target="_blank">
+     Mmathari Magano
+</a>
+</p>
+    </div>
+    <script>
+       function Try() {
+            let name = prompt("What is your name?");
+           if(name) {
+            alert(
+                "Thanks, " +
+                name +
+                " We will be in touch. Meanwhile, have lots of Kotas!"
+            );
+           }
+            else{
+                alert(
+                    "No name, no Kota for you!"
+                );
+            }
+        }
+    let tryButton = document.querySelector("button");
+        tryButton.addEventListener("click", Try);
+
+    </script>
+    
+</body>
+</html>
